@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src-elem 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; script-src-elem 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://code.jquery.com https://cdnjs.cloudflare.com; img-src  https://wallbox.com https://source.unsplash.com https://images.unsplash.com https://via.placeholder.com https://picsum.photos https://i.picsum.photos; media-src https://wallbox.com;"> -->
+    <!-- Bootstrap Vendor Library -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.css" />
+    <!-- SwiperJS Vendor Libary-->
+    <link rel="stylesheet" href="css/vendor/swiper.css" />
+    <title>Wallbox Mockup</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <main>
+        <section id="hero">
+            <div class="header-container">
+                <section id="banner"> <span>Envío y devoluciones gratuitas. Entrega en 7 días laborales.</span> </section>
+            <nav id="nav">
+                <ul class="nav__menu">
+                    <li class="nav__logo nav__logo--none">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 805.965 167.766" height="634.076" width="3046.167" fill="black">
+                                <path d="M203.861 167.219c-7.782-1.263-14.715-4.106-21.124-8.664-4.615-3.282-10.301-9.408-13.571-14.622-6.598-10.52-9.529-23.395-8.288-36.4 1.41-14.761 8.515-28.407 19.435-37.325 3.789-3.095 9.649-6.389 14.223-7.997 14.069-4.945 30.009-3.396 41.232 4.006 2.576 1.699 6.152 4.686 6.646 5.551.29.507.36-.111.472-4.167l.132-4.762 18.058-.068 18.058-.068v50.936 50.936l-18.058-.068-18.058-.068-.132-5.689c-.131-5.614-.138-5.677-.599-4.835-.867 1.586-5.239 5.871-7.606 7.454-3.188 2.132-6.355 3.616-9.952 4.661-6.037 1.754-14.439 2.233-20.869 1.19zm22.622-31.23c6.523-1.337 11.791-5.018 14.774-10.324 2.116-3.762 3.095-8.203 2.879-13.057-.353-7.944-3.961-14.519-10.084-18.378-5.763-3.632-14.479-4.484-21.457-2.098-9.35 3.197-15.167 12.25-14.582 22.695.387 6.914 2.464 11.681 6.896 15.827 3.266 3.055 7.828 5.041 13.106 5.705 1.498.189 6.89-.048 8.467-.371zm250.957 31.215c-6.362-1.164-10.618-2.826-15.259-5.96-2.64-1.782-4.495-3.538-6.52-6.172l-1.505-1.957-.071 5.727-.071 5.727h-18.119-18.119V82.285 0h18.124 18.124v36.139 36.139l2.315-2.167c5.395-5.05 12.574-8.519 20.838-10.071 4.198-.788 11.811-.856 16.005-.143 11.784 2.004 20.693 6.734 28.733 15.254 15.292 16.205 18.922 42.879 8.695 63.887-6.824 14.016-18.937 23.952-33.384 27.383-5.951 1.413-14.494 1.752-19.786.783zm4.825-31.468c4.146-1 7.665-2.888 10.417-5.59 2.561-2.514 4.322-5.649 5.56-9.894.543-1.864.615-2.654.601-6.615-.015-4.092-.08-4.708-.724-6.825-2.974-9.783-10.489-15.506-21.007-15.996-11.689-.545-20.83 5.951-23.591 16.766-1.963 7.69.048 16.519 4.977 21.853 3.606 3.903 8.602 6.297 14.444 6.924 2.151.231 7.177-.105 9.323-.622zM598.09 167.24c-10.591-1.451-18.74-4.231-26.889-9.173-8.558-5.189-15.547-12.854-19.643-21.543-4.738-10.05-6.11-22.594-3.746-34.244 3.193-15.736 13.089-28.343 28.044-35.726 7.061-3.486 13.493-5.391 22.499-6.662 4.398-.621 14.899-.618 19.315.006 15.168 2.142 27.04 7.46 36.068 16.155 7.896 7.605 12.476 16.115 14.676 27.266.508 2.574.574 3.781.573 10.451 0 8.15-.199 9.819-1.824 15.408-5.917 20.343-23.777 34.381-48.294 37.957-4.394.641-16.422.702-20.778.105zm15.704-31.366c8.427-1.786 14.22-7.289 16.587-15.754.657-2.349.799-8.403.265-11.245-.874-4.649-2.761-8.294-5.965-11.522-4.209-4.241-8.837-6.171-15.601-6.504-12.227-.603-21.451 6.473-23.845 18.291-.443 2.187-.38 7.528.116 9.803 1.026 4.708 2.75 7.966 5.859 11.075 3.276 3.276 7.072 5.197 11.79 5.968l2.366.418c.885.215 6.61-.144 8.428-.53zM35.719 166.41c-3.886-.629-4.817-.858-8.202-2.016-13.412-4.59-22.812-14.068-26.163-26.378C.003 133.053 0 132.964 0 95.639V60.854h17.055 17.055l.08 32.213.08 32.213.586 1.731c1.12 3.309 2.868 5.209 5.878 6.386 2.188.856 6.663.839 8.87-.034 2.958-1.17 5.192-3.949 5.924-7.369.214-1.001.3-10.514.3-33.271V60.854h17.192 17.192l.072 32.61.579 33.933c1.817 4.747 5.702 7.073 11.135 6.667 4.82-.36 7.945-2.864 9.312-7.461.44-1.479.477-3.781.547-33.668l.075-32.081h17.066 17.066l-.082 36.182-.082 36.182-.589 2.514c-1.945 8.302-5.771 14.8-11.891 20.2-7.997 7.056-18.958 11.021-30.464 11.021-7.581 0-13.872-1.964-20.887-6.52-2.543-1.652-6.763-5.189-8.074-6.766l-.9-1.083-1.953 1.989c-5.027 5.12-11.434 9.01-18.357 11.143-4.272 1.316-11.43 1.609-17.066.697zm263.525-84.123V0h18.124 18.124l-.067 82.219-.067 82.219-18.058.068-18.058.068zm59.972 82.107c-.097-.097-.176-37.125-.176-82.285V0h18.124 18.124v82.285 82.285H377.34c-9.871 0-18.027-.079-18.124-.176zm299.782-.189c.116-.201 2.771-3.132 5.9-6.515l6.324-6.845 7.699-8.344 1.852-2.007 3.062-3.326 4.008-4.388 1.833-1.998c.269-.277 1.8-1.924 3.4-3.66l4.366-4.73 1.852-2.011 1.72-1.878 2.894-3.154 3.178-3.433c.884-.946 1.766-1.925 1.961-2.175.315-.405-.082-.949-3.567-4.895l-4.061-4.572c-.077-.073-.973-1.085-1.99-2.249l-1.995-2.249c-.08-.073-1.088-1.204-2.241-2.514l-8.996-10.179-3.07-3.456-4.233-4.772-10.259-11.689c-.345-.44.769-.462 22.622-.444l22.985.02 1.058 1.251 16.055 18.494 1.034 1.131.716-.861c.394-.473 1.616-1.875 2.716-3.115l5.424-6.232 6.334-7.332 2.91-3.355 23.396-.01 23.396-.01-.641.725a25.53 25.53 0 0 1-.784.86c-.211.199-11.79 13.047-13.483 14.962l-10.98 12.18-15.052 16.703c-1.257 1.436-2.156.151 7.096 10.148l4.384 4.756 4.63 5.017 4.63 5.028 4.63 5.03 4.63 5.031 4.63 5.02 4.63 5.022 4.63 5.028 3.792 4.109 1.94 2.114-23.372.073c-12.854.04-23.61.005-23.901-.078s-2.017-1.891-3.836-4.018l-11.876-13.729-5.699-6.555c-2.608-3.009-4.871-5.429-5.027-5.378s-1.059.982-2.004 2.068l-5.953 6.83-5.292 6.099-5.292 6.095-5.895 6.788-1.661 1.938h-23.686c-20.068 0-23.653-.056-23.474-.365z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__logo nav__logo--margin-desktop nav__logo--flex">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.15 65.21" width="52.15" height="65.21" fill="black">
+                                <path d="M42.06 25.22h4.27v.4h-1.92v4.84h-.44v-4.84h-1.91zm7.52 5.25l-1.89-4.38v4.38h-.42v-5.25h.48l1.97 4.61 1.97-4.61h.46v5.25h-.42v-4.38l-1.88 4.38zM36.22 15.49v9.53h-8.28v12.89c0 1.59-.69 2.97-2.7 2.97-2.02 0-2.71-1.38-2.71-2.97V25.02h-8.48v12.89c0 1.59-.69 2.97-2.7 2.97s-2.7-1.38-2.7-2.97V25.02H0l.06-9.55C.06 5.03 9.24 0 18.12 0c8.86.01 18.1 4.97 18.1 15.49zM25.49 50.68c-2.69 0-5.43-1.47-7.29-3.58h-.05c-1.86 2.11-4.6 3.58-7.29 3.58-3.33 0-6.47-1.3-8.5-3.58H0c0 10 8.11 18.11 18.11 18.11S36.22 57.1 36.22 47.1H34c-2.04 2.28-5.18 3.58-8.51 3.58z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--has-submenu"> <a tabindex="0">Shop</a>
+                        <ul class="nav__submenu">
+                            <li class="nav__subitem"><a>GamaPulsar</a></li>
+                            <li class="nav__subitem"><a>Copper</a></li>
+                            <li class="nav__subitem"><a>Commander</a></li>
+                            <li class="nav__subitem"><a>Quasar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a>Our Solutions</a></li>
+                    <li class="nav__item"><a>Model Chooser</a></li>
+                    <li class="nav__item"><a>About Us</a></li>
+                    <li class="nav__item nav__item--margin-desktop"><a>My Wallbox</a></li>
+                    <li class="nav__button">
+                        <a>
+                            <svg class="nav__cart" height="456pt" viewBox="0 -13 456.75885 456" width="456pt" preserveAspectRatio="" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m150.355469 322.332031c-30.046875 0-54.402344 24.355469-54.402344 54.402344 0 30.042969 24.355469 54.398437 54.402344 54.398437 30.042969 0 54.398437-24.355468 54.398437-54.398437-.03125-30.03125-24.367187-54.371094-54.398437-54.402344zm0 88.800781c-19 0-34.402344-15.402343-34.402344-34.398437 0-19 15.402344-34.402344 34.402344-34.402344 18.996093 0 34.398437 15.402344 34.398437 34.402344 0 18.996094-15.402344 34.398437-34.398437 34.398437zm0 0"></path>
+                                <path d="m446.855469 94.035156h-353.101563l-7.199218-40.300781c-4.4375-24.808594-23.882813-44.214844-48.699219-48.601563l-26.101563-4.597656c-5.441406-.96875-10.632812 2.660156-11.601562 8.097656-.964844 5.441407 2.660156 10.632813 8.101562 11.601563l26.199219 4.597656c16.53125 2.929688 29.472656 15.871094 32.402344 32.402344l35.398437 199.699219c4.179688 23.894531 24.941406 41.324218 49.199219 41.300781h210c22.0625.066406 41.546875-14.375 47.902344-35.5l47-155.800781c.871093-3.039063.320312-6.3125-1.5-8.898438-1.902344-2.503906-4.859375-3.980468-8-4zm-56.601563 162.796875c-3.773437 12.6875-15.464844 21.367188-28.699218 21.300781h-210c-14.566407.039063-27.035157-10.441406-29.5-24.800781l-24.699219-139.398437h336.097656zm0 0"></path>
+                                <path d="m360.355469 322.332031c-30.046875 0-54.402344 24.355469-54.402344 54.402344 0 30.042969 24.355469 54.398437 54.402344 54.398437 30.042969 0 54.398437-24.355468 54.398437-54.398437-.03125-30.03125-24.367187-54.371094-54.398437-54.402344zm0 88.800781c-19 0-34.402344-15.402343-34.402344-34.398437 0-19 15.402344-34.402344 34.402344-34.402344 18.996093 0 34.398437 15.402344 34.398437 34.402344 0 18.996094-15.402344 34.398437-34.398437 34.398437zm0 0"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__toggle">
+                        <a class="nav__hamburger">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.333 341.333">
+                                <path d="M0 277.333h341.333V320H0zm0-128h341.333V192H0zm0-128h341.333V64H0z" />
+                            </svg>
+                        </a> 
+                        <a class="nav__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 41.756 41.756" width="41.756" height="41.756"><path d="M27.948 20.878L40.291 8.536a5 5 0 0 0 0-7.071 5 5 0 0 0-7.07 0L20.878 13.809 8.535 1.465a5 5 0 0 0-7.07 0 5 5 0 0 0 0 7.071l12.342 12.342L1.465 33.22a5 5 0 0 0 0 7.071A4.98 4.98 0 0 0 5 41.755a4.98 4.98 0 0 0 3.535-1.464l12.343-12.342 12.343 12.343a4.98 4.98 0 0 0 7.07 0 5 5 0 0 0 0-7.071L27.948 20.878z"/></svg>
+                        </a>
+                    </li>
+                    <li class="nav__user">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                                <path d="M437.02 330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521 243.251 404 198.548 404 148 404 66.393 337.607 0 256 0S108 66.393 108 148c0 50.548 25.479 95.251 64.262 121.962-36.21 12.495-69.398 33.136-97.281 61.018C26.629 379.333 0 443.62 0 512h40c0-119.103 96.897-216 216-216s216 96.897 216 216h40c0-68.38-26.629-132.667-74.98-181.02zM256 256c-59.551 0-108-48.448-108-108S196.449 40 256 40s108 48.448 108 108-48.449 108-108 108z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav__world">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 62 70" width="428.973" height="484.324" xmlns:v="https://vecta.io/nano">
+                                <path d="M31 70a31 31 0 0 1 0-62 30.138 30.138 0 0 1 4.666.362 1 1 0 1 1-.312 1.976A28.09 28.09 0 0 0 31 10a29.028 29.028 0 1 0 21.722 9.8 1.018 1.018 0 0 1 .048-1.4.981.981 0 0 1 1.377.006l.03.03A31 31 0 0 1 31 70z" />
+                                <path d="M53.48 20.14h-.01a1 1 0 1 1 .01 0zM31 25.51a51.694 51.694 0 0 1-12.92-1.6 1.065 1.065 0 0 1-.128-.042 43.452 43.452 0 0 1-9.867-3.829 1 1 0 0 1 .435-1.9 1.038 1.038 0 0 1 .486.121 41.452 41.452 0 0 0 9.57 3.7.942.942 0 0 1 .133.044 51.16 51.16 0 0 0 21.766.622 1 1 0 1 1 .37 1.966A53.375 53.375 0 0 1 31 25.51zm22.481 34.352a1 1 0 0 1-.474-.12A46.4 46.4 0 0 0 31 54.488a46.4 46.4 0 0 0-22.007 5.254 1 1 0 0 1-.951-1.76A48.4 48.4 0 0 1 31 52.488a48.4 48.4 0 0 1 22.958 5.494 1 1 0 0 1-.477 1.88z" />
+                                <path d="M31 70c-5.619 0-10.712-5.468-13.623-14.627-.008-.025-.015-.049-.021-.074A54.717 54.717 0 0 1 15 39a54.679 54.679 0 0 1 2.358-16.3c0-.024.012-.047.019-.07C20.288 13.468 25.381 8 31 8a1 1 0 0 1 0 2c-4.622 0-9.1 5.046-11.7 13.173a1.47 1.47 0 0 1-.019.071A52.629 52.629 0 0 0 17 39a52.629 52.629 0 0 0 2.283 15.756 1.04 1.04 0 0 1 .02.075C21.9 62.956 26.379 68 31 68s9.1-5.046 11.7-13.173c.006-.024.012-.048.019-.071A52.629 52.629 0 0 0 45 39a56.588 56.588 0 0 0-.6-8.312 1.125 1.125 0 0 1-.011-.153 1 1 0 0 1 1.724-.695 1.016 1.016 0 0 1 .277.63A58.645 58.645 0 0 1 47 39a54.679 54.679 0 0 1-2.358 16.3.8.8 0 0 1-.019.07C41.712 64.532 36.619 70 31 70z" />
+                                <path d="M31 70a1 1 0 0 1-1-1V9a1 1 0 0 1 2 0v60a1 1 0 0 1-1 1z" />
+                                <path d="M61 40H1a1 1 0 0 1 0-2h60a1 1 0 0 1 0 2zm-15.261-8a1 1 0 0 1-.8-.4C44.507 31.029 34.3 17.464 34.3 11.435a11.435 11.435 0 0 1 22.87 0c0 6.029-10.2 19.594-10.637 20.168a1 1 0 0 1-.794.397zm0-30a9.446 9.446 0 0 0-9.439 9.435c0 4.08 6.209 13.452 9.435 17.885 3.226-4.433 9.435-13.8 9.435-17.885A9.446 9.446 0 0 0 45.739 2zm0 16.382a6.668 6.668 0 1 1 6.668-6.668 6.676 6.676 0 0 1-6.668 6.668zm0-11.336a4.668 4.668 0 1 0 4.668 4.668 4.675 4.675 0 0 0-4.668-4.668z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <div class="swiper-container hero__slideshow">
+                <div class="swiper-wrapper hero__slide-wrapper">
+                    <a class="swiper-slide hero__slide" href="https://wallbox.com/es_es/tipos-cargadores-coches-electricos">
+                        <picture class="hero__image">
+                            <source media="(max-width: 480px)" srcset="img/png/Home_mobile_Pulsar-Plus_480x720_ES.png">
+                            <source media="(max-width: 767px)" srcset="img/png/Home_tablet_Pulsar-Plus780x960_ES.png">
+                            <source media="(min-width: 768px)" srcset="img/png/Home_desktop_1920x1080_ES.png">
+                            <img class="img-fluid" src="img/png/Home_desktop_1920x1080_ES.png" alt="left sideshot of guy driving in a car">    
+                        </picture>
+                    </a>
+                    <a class="swiper-slide hero__slide hero__slide--relative href="https://wallbox.com/es_es/tipos-cargadores-coches-electricos">
+                        <picture class="d-lg-none hero__image">
+                            <source media="(max-width: 480px)" srcset="img/jpg/LandingScreen_mobile.jpg">
+                            <source media="(max-width: 767px)" srcset="img/jpg/LandingScreen_tablet.jpg">
+                            <source media="(min-width: 768px)" srcset="img/jpg/LandingScreen_desktop.jpg">
+                            <img class="img-fluid" src="img/jpg/LandingScreen_desktop.jpg" alt="left sideshot of guy driving in a car">    
+                        </picture>
+                        <video class="d-none d-lg-block hero__video" muted playsinline autoplay loop preload="auto">
+                            <source src="video/ETheLandingScreen.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="hero__overlay-container">
+                            <span class="hero__overlay-text">Proporcionamos la mejor experiencia de carga posible</span>
+                            <span class="hero__overlay-cta">MÁS INFORMACIÓN</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- If we need navigation arrows -->
+                <div class="hero__nav-container hero__nav-prev"><span class="">&#8249;</span></div>
+                <div class="hero__nav-container hero__nav-next"><span class="">&#8250;</span></div>
+            </div>
+            <a href="#company" class="d-none d-md-flex hero__arrow-down">
+                <span class="hero__arrow-span">&#8964;</span>
+            </a>
+        </section>
+        <section id="company">
+            <div class="container-fluid">
+                <div class="row">
+                    <article class="col-12 col-xl-6" >
+                        <h2 class="guide__header">Creando un futuro sostenible a través de la tecnología</h2>
+                        <section class="guide__text">
+                            <p>
+                                Wallbox es una empresa global dedicada a cambiar la forma en que el mundo 
+                                utiliza la energía. Creamos sistemas de carga inteligentes que combinan 
+                                tecnología de vanguardia con un diseño excepcional, gestionando la comunicación 
+                                entre el coche y el cargador mediante aplicaciones fáciles de usar.
+                            </p>
+                        </section>
+                        <section class="d-flex justify-content-center justify-content-xl-start">
+                            <a href="#" target="_blank" class="guide__btn-cta text-center">Saber más</a>
+                        </section>
+                    </article> 
+                    <picture class="d-none d-xl-block col-xl-6"><img class="img-fluid guide__img" src="img/png/home2.png" alt="apple logo with App Store text"></picture>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="container-fluid">
+                <ol class="products__nav-list d-flex flex-wrap justify-content-center">
+                    <!-- Add With Custom SwiperJS Script -->
+                </ol>
+                <div class="swiper-container products__swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper products__cards-container">
+                        <!-- Slides -->
+                        <div id="gammar-pulsar" class="gamma swiper-slide">
+                            <div class="row align-items-center">
+                                <div class="gamma-variation variation swiper-container col-12 col-md-6">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <picture class="variation__card swiper-slide"><img class="img-fluid" src="img/png/PulsarPlus_Black.png" alt=""></picture>
+                                        <picture class="variation__card swiper-slide"><img class="img-fluid" src="img/png/PulsarPlus_White.png" alt=""></picture>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <ul class="gamma-variation__pagination d-flex justify-content-center"></ul>
+                                </div>
+                                <article class="col-12 col-md-6 product__text-body">
+                                    <h3 class="product__top-subheader d-none d-xl-block">Para tu hogar</h3>
+                                    <h2 class="product__header">Gamar Pulsar</h2>
+                                    <h4 class="product__subheader">Pequeño pero potente</h4>
+                                    <p class="product__description">
+                                        Los cargadores Pulsar y Pulsar Plus de Wallbox se han diseñado para la carga 
+                                        inteligente de tu vehículo eléctrico con una gran potencia y un tamaño increíblemente 
+                                        pequeño. La gama Pulsar es ideal para el uso diario en el hogar. Su diseño compacto y 
+                                        minimalista se ajusta a cualquier garaje y permite una gran variedad de opciones gracias 
+                                        a la app myWallbox.
+                                    </p>
+                                    <div class="d-none d-xl-block d-flex flex-wrap justify-content-center product__link-container">
+                                        <a href="#" class="product__link product__link--select">Configurar</a>
+                                        <a href="#" class="product__link product__link--learn">Saber más</a>
+                                    </div>
+                                </article>
+                                <div class="col-12 d-xl-none d-flex flex-wrap justify-content-center product__link-container">
+                                    <a href="#" class="product__link product__link--select">Configurar</a>
+                                    <a href="#" class="product__link product__link--learn">Saber más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cooper-sb" class="copper swiper-slide">
+                            <div class="row">
+                                <div class="variation swiper-container copper-variation col-12 col-md-6">
+                                    <div class="swiper-wrapper product__swiper-wrapper--align-center">
+                                        <picture class="variation__card swiper-slide d-flex align-items-center"><img class="img-fluid" src="img/png/CopperSB.png" alt=""></picture>
+                                    </div>
+                                </div>
+                                <article id="copper-sb" class="col-12 col-md-6 product__text-body">
+                                    <h3 class="product__top-subheader d-none d-xl-block">Para tu negocio</h3>
+                                    <h2 class="product__header">Copper SB</h2>
+                                    <h4 class="product__subheader">Carga inteligente diseñada para un sinfín de posibilidades.</h4>
+                                    <p class="product__description">
+                                        El cargador Copper SB de Wallbox se ha creado para ofrecer un diseño versátil y 
+                                        elegante para propietarios de vehículos eléctricos y aparcamientos de negocios. 
+                                        Cualquier conductor puede cargar la batería de su vehículo enchufando la manguera. 
+                                        Gracias a la plataforma myWallbox, es posible disfrutar de un amplio abanico de 
+                                        posibilidades para controlar el estado de la carga, los usuarios, el consumo de 
+                                        energía y muchas más opciones.
+                                    </p>
+                                    <div class="d-none d-xl-block d-flex flex-wrap justify-content-center product__link-container">
+                                        <a href="#" class="product__link product__link--select">Configurar</a>
+                                        <a href="#" class="product__link product__link--learn">Saber más</a>
+                                    </div>
+                                </article>
+                                <div class="col-12 d-xl-none d-flex flex-wrap justify-content-center product__link-container">
+                                    <button class="product__link  product__link--select">Configurar</button>
+                                    <button class="product__link product__link--learn">Saber más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="commander-2" class="swiper-slide">
+                            <div class="row">
+                                <div class="commander-variation variation swiper-container col-12 col-md-6 d-flex flex-column">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <picture class="variation__card swiper-slide"><img class="img-fluid" src="img/png/Commander2_Black.png" alt=""></picture>
+                                        <picture class="variation__card swiper-slide"><img class="img-fluid" src="img/png/Commander2_White.png" alt=""></picture>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <ul class="commander-variation__pagination d-flex justify-content-center"></ul>
+                                </div>
+                                <article id="copper-sb" class="col-12 col-md-6 product__text-body">
+                                    <h3 class="product__top-subheader d-none d-xl-block">Para tu negocio</h3>
+                                    <h2 class="product__header">Commander 2</h2>
+                                    <h4 class="product__subheader">Pequeño pero potente</h4>
+                                    <p class="product__description">
+                                        Los cargadores Pulsar y Pulsar Plus de Wallbox se han diseñado para la carga 
+                                        inteligente de tu vehículo eléctrico con una gran potencia y un tamaño increíblemente 
+                                        pequeño. La gama Pulsar es ideal para el uso diario en el hogar. Su diseño compacto y 
+                                        minimalista se ajusta a cualquier garaje y permite una gran variedad de opciones gracias 
+                                        a la app myWallbox.
+                                    </p>
+                                    <div class="d-none d-xl-block d-flex flex-wrap justify-content-center product__link-container">
+                                        <a href="#" class="product__link product__link--select">Configurar</a>
+                                        <a href="#" class="product__link product__link--learn">Saber más</a>
+                                    </div>
+                                </article>
+                                <div class="col-12 d-xl-none d-flex flex-wrap justify-content-center product__link-container">
+                                    <button class="product__link  product__link--select">Configurar</button>
+                                    <button class="product__link product__link--learn">Saber más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="quasar" class="swiper-slide">
+                            <div class="row">
+                                <div class="variation swiper-container copper-variation col-12 col-md-6">
+                                    <div class="swiper-wrapper product__swiper-wrapper--align-center">
+                                        <picture class="variation__card swiper-slide d-flex align-items-center"><img class="img-fluid" src="img/png/Quasar.png" alt=""></picture>
+                                    </div>
+                                </div>
+                                <article id="copper-sb" class="col-12 col-md-6 product__text-body">
+                                    <h2 class="product__header">Quasar</h3>
+                                    <h3 class="product__subheader">El primer cargador bidireccional de su especie.</h3>
+                                    <p class="product__description">
+                                        El cargador Quasar de Wallbox se ha desarrollado para trasformar los vehículos 
+                                        eléctricos en fuentes de energía de gran potencia. La tecnología de carga bidireccional 
+                                        permite cargar y descargar tu vehículo eléctrico, por lo que tienes la posibilidad de 
+                                        alimentar tu hogar o la red de suministro con la batería del vehículo. Con Quasar, la 
+                                        batería de tu vehículo no se limita solo a la conducción, sino que también te aporta 
+                                        esa energía adicional en tu vida.
+                                    </p>
+                                    <div class="d-none d-xl-block d-flex flex-wrap justify-content-center product__link-container">
+                                        <a href="#" class="product__link product__link--learn">Saber más</a>
+                                    </div>
+                                </article>
+                                <div class="col-12 d-xl-none d-flex flex-wrap justify-content-center product__link-container">
+                                    <button class="product__link product__link--learn">Saber más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="finder">
+            <div class="container-fluid finder__container d-flex flex-wrap justify-content-center justify-content-lg-around align-items-lg-center">
+                <h2 class="finder__header">Encuentra tu cargador</h2>
+                <form id="finder__form" action="" method="post" class="finder__form d-flex flex-wrap justify-content-around">
+                    <select name="car-brands" id="car-brands" class="finder__brands">
+                        <option value="">Marca de coche</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                        <option value="tesla">Tesla</option>
+                    </select>
+                    <select name="car-models" id="car-models" class="finder__models">
+                        <option value="">Modelo de coche</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                        <option value="tesla">Tesla</option>
+                    </select>
+                    <button type="submit" name="finder-submit" value="Submit" class="finder__submit"><span>Buscar</span></button>
+                </form>
+            </div>
+        </section>
+        <section id="guide">
+            <div class="container-fluid">
+                <div class="row">
+                    <article class="col-12 col-xl-6">
+                        <h2 class="guide__header">El tipo de instalación perfecto para tu cargador Wallbox</h2>
+                        <section class="guide__text">
+                            <p>
+                                Wallbox pone a tu disposición una red de partners certificados, 
+                                formados y entrenados para llevar a cabo tu instalación. Ten en 
+                                cuenta que una buena instalación garantiza el máximo rendimiento 
+                                de tu cargador.
+                            </p>
+                        </section>
+                        <section class="d-flex justify-content-center justify-content-xl-start">
+                            <a href="#" target="_blank" class="guide__btn-cta text-center">Saber más</a>
+                        </section>
+                    </article> 
+                    <picture class="d-none d-xl-block col-xl-6"><img class="img-fluid guide__img" src="img/png/home3.png" alt="apple logo with App Store text"></picture>
+                </div>
+            </div>
+        </section>
+        <section id="logos">
+            <div class="container-fluid">
+                <div class="row"><h2 class="logos__header">Marcas de vehículos con los que Wallbox es compatible</h2></div>
+                <div class="logos__image-container d-flex flex-wrap justify-content-center">
+                    <img class="img-fluid logos__image" src="img/png/audi.png" alt="">
+                    <img class="img-fluid logos__image" src="img/png/Cupra.png" alt="">
+                    <img class="img-fluid logos__image" src="img/png/Mercedes.png" alt="">
+                    <img class="img-fluid logos__image" src="img/png/Seat.png" alt="">
+                    <img class="img-fluid logos__image" src="img/png/vw.png" alt="">
+                    <img class="img-fluid logos__image" src="img/png/nissan.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="app">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2 class="app__header">Controla tu cargador con myWallbox app</h2> </div>
+                <div class="row">
+                    <section class="app__features col-12 col-md-5 col-xl-6">
+                        <article class="app__feature-item d-flex flex-row">
+                            <span class="app__check"></span>
+                            <h3 class="app__feature-text">Observa el estado de tu cargador y contrólalo en remoto estés donde estés</h3> </article>
+                        <article class="app__feature-item d-flex flex-row">
+                            <span class="app__check"></span>
+                            <h3 class="app__feature-text">Programa tu carga cuando la energía es más barata</h3> </article>
+                        <article class="app__feature-item d-flex flex-row">
+                            <span class="app__check"></span>
+                            <h3 class="app__feature-text">Visualiza tus estadísticas en tiempo real</h3> </article>
+                        <article class="app__feature-item d-flex flex-row">
+                            <span class="app__check"></span>
+                            <h3 class="app__feature-text">Protege tu cargador bloqueándolo para el uso indeseado</h3> </article>
+                        <div class="app__download d-flex d-md-none d-xl-flex flex-row flex-wrap justify-content-around justify-content-xxl-center">
+                            <a class="app__cta" href="https://apps.apple.com/app/wallbox/id1188288011" target="_blank" rel="noopener">
+                                <picture> <img class="img-fluid" src="img/png/appstore.png" alt="apple logo with App Store text"> </picture>
+                            </a>
+                            <a class="app__cta" href="https://play.google.com/store/apps/details?id=com.wallbox" target="_blank" rel="noopener">
+                                <picture> <img class="img-fluid" src="img/png/googleplay.png" alt="google text lolgo and Google Play text"> </picture>
+                            </a>
+                        </div>
+                    </section>
+                    <div class="app__right col-12 col-md-7 col-xl-6 d-none d-md-flex flex-column justify-content-center">
+                        <div class="app__demo d-flex">
+                            <picture class="app__product-img"> <img class="img-fluid" src="img/png/USmyWallboxApp.png" alt="customer testimony test with charger background"> </picture>
+                        </div>
+                        <div class="app__download d-md-flex justify-content-around d-xl-none">
+                            <a class="app__cta" href="https://apps.apple.com/app/wallbox/id1188288011" target="_blank" rel="noopener">
+                                <picture> <img class="img-fluid" src="img/png/appstore.png" alt="apple logo with App Store text"> </picture>
+                            </a>
+                            <a class="app__cta" href="https://play.google.com/store/apps/details?id=com.wallbox" target="_blank" rel="noopener">
+                                <picture> <img class="img-fluid" src="img/png/googleplay.png" alt="google text lolgo and Google Play text"> </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+                <div class="container-fluid about__padding">
+                    <div class="row row-xs-md-1 row-cols-md-2 row-cols-xl-4">
+                        <article class="about__article d-flex">
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <svg class="about__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                <title>icon_light_indicator</title>
+                                <path id="SVGID" d="M27.2287178,27.3500004c-6.2950211,6.1999989-16.2871227,6.1999989-22.5821476,0
+                                    c-6.1951022-6.3000011-6.1951022-16.3999996,0-22.7000008C10.9415941-1.55,21.0336151-1.55,27.32864,4.6499996
+                                    S33.5237427,21.0500011,27.2287178,27.3500004z M25.9375935,6.0500011c-5.5-5.4000001-14.3999987-5.4000001-19.8999996,0.0999994
+                                    S0.6375945,20.5500011,6.1375942,25.9500008s14.3999996,5.3999996,19.8999996,0S31.3375931,11.5500011,25.9375935,6.0500011z"></path><rect x="20.3217316" y="8.3538799" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 0.0408493 18.8063583)" style="fill:#52B89E;" width="4.799953" height="1.9999807"></rect><rect x="8.2521687" y="6.8818231" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -3.8533289 9.2608404)" style="fill:#52B89E;" width="1.9999807" height="4.7999539"></rect><rect x="3.9000001" y="14" style="fill:#52B89E;" width="2.9999995" height="2"></rect><rect x="25" y="14" style="fill:#52B89E;" width="3" height="2"></rect><rect x="14.8999996" y="4.1000004" style="fill:#52B89E;" width="2" height="3"></rect><path d="M19.8486328,25.2841797c-0.2744141,0-0.5488281-0.0664062-0.8037109-0.1992188L16,23.4833984l-3.0439453,1.6005859
+                                    c-0.5864258,0.3085938-1.2832031,0.2568359-1.8188477-0.1328125c-0.534668-0.3886719-0.7973633-1.0351562-0.6850586-1.6875
+                                    L11.0332031,19.875l-2.4624023-2.4003906c-0.4741211-0.4609375-0.6416016-1.1386719-0.4375-1.7685547
+                                    c0.2041016-0.6293945,0.7382812-1.0800781,1.3930664-1.1757812l3.4038086-0.4941406l1.5219727-3.0839844
+                                    c0.2929688-0.5932617,0.8857422-0.9619141,1.5473633-0.9624023H16c0.6621094,0,1.2548828,0.3686523,1.5478516,0.9619141v0.0004883
+                                    l1.5214844,3.0839844l3.4033203,0.4941406c0.6552734,0.0957031,1.1894531,0.5458984,1.3935547,1.175293
+                                    s0.0371094,1.3071289-0.4365234,1.769043L20.9667969,19.875l0.5810547,3.3896484
+                                    c0.1123047,0.6523438-0.1513672,1.2988281-0.6865234,1.6875C20.5595703,25.171875,20.2050781,25.2841797,19.8486328,25.2841797z
+                                     M10.3637695,16.4296875l2.168457,2.1142578c0.4077148,0.3974609,0.5927734,0.96875,0.4960938,1.5283203l-0.5112305,2.9833984
+                                    l2.6796875-1.4091797c0.5019531-0.265625,1.1040039-0.2646484,1.605957-0.0009766l2.6806641,1.4101562l-0.5117188-2.984375
+                                    c-0.0957031-0.5605469,0.0898438-1.1308594,0.4951172-1.5263672l2.1699219-2.1152344l-2.9970703-0.4350586
+                                    c-0.5605469-0.0810547-1.0458984-0.4331055-1.2988281-0.9418945L16,12.3349609l-1.3398438,2.715332
+                                    c-0.2509766,0.5092773-0.7368164,0.862793-1.300293,0.9443359L10.3637695,16.4296875z M19.1328125,14.1655273h0.0107422H19.1328125z
+                                     M15.7548828,11.8374023c0,0.0004883,0.0004883,0.0009766,0.0004883,0.0014648L15.7548828,11.8374023z">
+                                </path>
+                            </svg>
+                            <div class="about__text-block">
+                                <h2><span class="about__header">5+</span><span class="about__desc">years of experience</span></h2>
+                            </div>
+                        </article>
+                        <article class="about__article d-flex">
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <svg class="about__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                <title>icon_light_indicator</title>
+                                <path id="SVGID" d="M27.2287178,27.3500004c-6.2950211,6.1999989-16.2871227,6.1999989-22.5821476,0
+                                    c-6.1951022-6.3000011-6.1951022-16.3999996,0-22.7000008C10.9415941-1.55,21.0336151-1.55,27.32864,4.6499996
+                                    S33.5237427,21.0500011,27.2287178,27.3500004z M25.9375935,6.0500011c-5.5-5.4000001-14.3999987-5.4000001-19.8999996,0.0999994
+                                    S0.6375945,20.5500011,6.1375942,25.9500008s14.3999996,5.3999996,19.8999996,0S31.3375931,11.5500011,25.9375935,6.0500011z"></path><rect x="20.3217316" y="8.3538799" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 0.0408493 18.8063583)" style="fill:#52B89E;" width="4.799953" height="1.9999807"></rect><rect x="8.2521687" y="6.8818231" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -3.8533289 9.2608404)" style="fill:#52B89E;" width="1.9999807" height="4.7999539"></rect><rect x="3.9000001" y="14" style="fill:#52B89E;" width="2.9999995" height="2"></rect><rect x="25" y="14" style="fill:#52B89E;" width="3" height="2"></rect><rect x="14.8999996" y="4.1000004" style="fill:#52B89E;" width="2" height="3"></rect><path d="M19.8486328,25.2841797c-0.2744141,0-0.5488281-0.0664062-0.8037109-0.1992188L16,23.4833984l-3.0439453,1.6005859
+                                    c-0.5864258,0.3085938-1.2832031,0.2568359-1.8188477-0.1328125c-0.534668-0.3886719-0.7973633-1.0351562-0.6850586-1.6875
+                                    L11.0332031,19.875l-2.4624023-2.4003906c-0.4741211-0.4609375-0.6416016-1.1386719-0.4375-1.7685547
+                                    c0.2041016-0.6293945,0.7382812-1.0800781,1.3930664-1.1757812l3.4038086-0.4941406l1.5219727-3.0839844
+                                    c0.2929688-0.5932617,0.8857422-0.9619141,1.5473633-0.9624023H16c0.6621094,0,1.2548828,0.3686523,1.5478516,0.9619141v0.0004883
+                                    l1.5214844,3.0839844l3.4033203,0.4941406c0.6552734,0.0957031,1.1894531,0.5458984,1.3935547,1.175293
+                                    s0.0371094,1.3071289-0.4365234,1.769043L20.9667969,19.875l0.5810547,3.3896484
+                                    c0.1123047,0.6523438-0.1513672,1.2988281-0.6865234,1.6875C20.5595703,25.171875,20.2050781,25.2841797,19.8486328,25.2841797z
+                                     M10.3637695,16.4296875l2.168457,2.1142578c0.4077148,0.3974609,0.5927734,0.96875,0.4960938,1.5283203l-0.5112305,2.9833984
+                                    l2.6796875-1.4091797c0.5019531-0.265625,1.1040039-0.2646484,1.605957-0.0009766l2.6806641,1.4101562l-0.5117188-2.984375
+                                    c-0.0957031-0.5605469,0.0898438-1.1308594,0.4951172-1.5263672l2.1699219-2.1152344l-2.9970703-0.4350586
+                                    c-0.5605469-0.0810547-1.0458984-0.4331055-1.2988281-0.9418945L16,12.3349609l-1.3398438,2.715332
+                                    c-0.2509766,0.5092773-0.7368164,0.862793-1.300293,0.9443359L10.3637695,16.4296875z M19.1328125,14.1655273h0.0107422H19.1328125z
+                                     M15.7548828,11.8374023c0,0.0004883,0.0004883,0.0009766,0.0004883,0.0014648L15.7548828,11.8374023z">
+                                </path>
+                            </svg>
+                            <div class="about__text-block">
+                                <h2><span class="about__header">100,000+</span><span class="about__desc">Chargers sold</span></h2> </div>
+                        </article>
+                        <article class="about__article d-flex">
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
+                                <g id="Grupo_1050" data-name="Grupo 1050" transform="translate(-600 -5359.926)">
+                                  <g id="pedestal_icon" transform="translate(600 5359.926)">
+                                    <g id="Grupo_1047" data-name="Grupo 1047" transform="translate(61.505 39.194)">
+                                      <path id="Trazado_2045" data-name="Trazado 2045" d="M39.738,31.018h1.826V26.932h4.694a1.091,1.091,0,0,0,0-2.179H41.564V20.666h4.694a.975.975,0,0,0,1.043-1.09.979.979,0,0,0-1.043-1.09H41.564V14.4H39.738c-4.694,0-7.042,1.907-7.563,5.993H20.7V24.48H32.175C32.7,29.111,35.3,31.018,39.738,31.018Z" transform="translate(-20.7 -14.4)"></path>
+                                    </g>
+                                    <g id="Grupo_1048" data-name="Grupo 1048" transform="translate(12.621 39.738)">
+                                      <path id="Trazado_2046" data-name="Trazado 2046" d="M12.808,14.6H10.986v4.086H6.041A.974.974,0,0,0,5,19.776a.978.978,0,0,0,1.041,1.09h4.685v4.086H6.041a1.091,1.091,0,0,0,0,2.179h4.685v4.086h1.822c4.685,0,7.027-1.907,7.547-5.993H31.546V21.138H20.095C19.834,16.507,17.232,14.6,12.808,14.6Z" transform="translate(-8 -14.6)"></path>
+                                    </g>
+                                    <path id="Trazado_2047" data-name="Trazado 2047" d="M35.212,84.315H19.138A6.629,6.629,0,0,1,12.6,77.776V12.938A6.629,6.629,0,0,1,19.138,6.4H35.212a6.629,6.629,0,0,1,6.538,6.538V77.776A6.454,6.454,0,0,1,35.212,84.315Z" transform="translate(21.689 10.961)" fill="none" stroke="#4bc1a4" stroke-miterlimit="10" stroke-width="4"></path>
+                                    <path id="Trazado_2048" data-name="Trazado 2048" d="M31.346,30.794H23.173A8.027,8.027,0,0,1,15,22.621V9h7.628a8.606,8.606,0,0,1,8.718,8.718Z" transform="translate(25.827 15.495)"></path>
+                                    <g id="Capa_2">
+                                      <g id="Capa_1-2">
+                                        <path id="Trazado_2049" data-name="Trazado 2049" d="M49,5.444A43.556,43.556,0,1,1,5.444,49,43.684,43.684,0,0,1,49,5.444M49,0A49,49,0,1,0,98,49,49.144,49.144,0,0,0,49,0Z"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            <div class="about__text-block">
+                                <h2><span class="about__header">500+</span><span class="about__desc">Qualified installers</span></h2> </div>
+                        </article>
+                        <article class="about__article d-flex">
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+                            <svg class="about__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                                <title>icon_light_indicator</title>
+                                <path id="SVGID" d="M27.2287178,27.3500004c-6.2950211,6.1999989-16.2871227,6.1999989-22.5821476,0
+                                    c-6.1951022-6.3000011-6.1951022-16.3999996,0-22.7000008C10.9415941-1.55,21.0336151-1.55,27.32864,4.6499996
+                                    S33.5237427,21.0500011,27.2287178,27.3500004z M25.9375935,6.0500011c-5.5-5.4000001-14.3999987-5.4000001-19.8999996,0.0999994
+                                    S0.newsletter__consent-text6375945,20.5500011,6.1375942,25.9500008s14.3999996,5.3999996,19.8999996,0S31.3375931,11.5500011,25.9375935,6.0500011z"></path><rect x="20.3217316" y="8.3538799" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 0.0408493 18.8063583)" style="fill:#52B89E;" width="4.799953" height="1.9999807"></rect><rect x="8.2521687" y="6.8818231" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -3.8533289 9.2608404)" style="fill:#52B89E;" width="1.9999807" height="4.7999539"></rect><rect x="3.9000001" y="14" style="fill:#52B89E;" width="2.9999995" height="2"></rect><rect x="25" y="14" style="fill:#52B89E;" width="3" height="2"></rect><rect x="14.8999996" y="4.1000004" style="fill:#52B89E;" width="2" height="3"></rect><path d="M19.8486328,25.2841797c-0.2744141,0-0.5488281-0.0664062-0.8037109-0.1992188L16,23.4833984l-3.0439453,1.6005859
+                                    c-0.5864258,0.3085938-1.2832031,0.2568359-1.8188477-0.1328125c-0.534668-0.3886719-0.7973633-1.0351562-0.6850586-1.6875
+                                    L11.0332031,19.875l-2.4624023-2.4003906c-0.4741211-0.4609375-0.6416016-1.1386719-0.4375-1.7685547
+                                    c0.2041016-0.6293945,0.7382812-1.0800781,1.3930664-1.1757812l3.4038086-0.4941406l1.5219727-3.0839844
+                                    c0.2929688-0.5932617,0.8857422-0.9619141,1.5473633-0.9624023H16c0.6621094,0,1.2548828,0.3686523,1.5478516,0.9619141v0.0004883
+                                    l1.5214844,3.0839844l3.4033203,0.4941406c0.6552734,0.0957031,1.1894531,0.5458984,1.3935547,1.175293
+                                    s0.0371094,1.3071289-0.4365234,1.769043L20.9667969,19.875l0.5810547,3.3896484
+                                    c0.1123047,0.6523438-0.1513672,1.2988281-0.6865234,1.6875C20.5595703,25.171875,20.2050781,25.2841797,19.8486328,25.2841797z
+                                     M10.3637695,16.4296875l2.168457,2.1142578c0.4077148,0.3974609,0.5927734,0.96875,0.4960938,1.5283203l-0.5112305,2.9833984
+                                    l2.6796875-1.4091797c0.5019531-0.265625,1.1040039-0.2646484,1.605957-0.0009766l2.6806641,1.4101562l-0.5117188-2.984375
+                                    c-0.0957031-0.5605469,0.0898438-1.1308594,0.4951172-1.5263672l2.1699219-2.1152344l-2.9970703-0.4350586
+                                    c-0.5605469-0.0810547-1.0458984-0.4331055-1.2988281-0.9418945L16,12.3349609l-1.3398438,2.715332
+                                    c-0.2509766,0.5092773-0.7368164,0.862793-1.300293,0.9443359L10.3637695,16.4296875z M19.1328125,14.1655273h0.0107422H19.1328125z
+                                     M15.7548828,11.8374023c0,0.0004883,0.0004883,0.0009766,0.0004883,0.0014648L15.7548828,11.8374023z">
+                                </path>
+                            </svg>
+                            <div class="about__text-block">
+                                <h2><span class="about__header">60+</span><span class="about__desc">Presencia en</span><span class="about__desc">más de 60 Países</span></h2>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        </section>
+        <section id="reviews">
+            <div class="container-fluid">
+                <div class="row"><h2 class="reviews__header">Lo que dicen nuestros clientes</h2></div>
+                <div class="row reviews__main">
+                    <div class="swiper-container reviews__swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper reviews__cards-container">
+                            <!-- Slides -->
+                            <div class="swiper-slide reviews__card"><img class="img-fluid" src="img/jpg/cleantechnicamazon.jpg" alt=""></div>
+                            <div class="swiper-slide reviews__card"><img class="img-fluid" src="img/jpg/engadget.jpg" alt=""></div>
+                            <div class="swiper-slide reviews__card"><img class="img-fluid" src="img/jpg/forbes.jpg" alt=""></div>
+                            <div class="swiper-slide reviews__card"><img class="img-fluid" src="img/jpg/input.jpg" alt=""></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination reviews__swiper-pagination d-lg-none"></div>
+                    </div>
+                    <!-- If we need navigation arrows -->
+                    <div class="reviews__button-prev d-none d-lg-block"><span class="reviews__arrow-span">&#8249;</span></div>
+                    <div class="reviews__button-next d-none d-lg-block"><span class="reviews__arrow-span">&#8250;</span></div>
+                </div>
+            </div>
+        </section>
+        <section id="awards">
+            <div class="container-fluid">
+                <div class="row"><h2 class="awards__header">Premios recibidos</h2></div>
+                <div class="d-flex flex-wrap justify-content-sm-center justify-content-around">
+                    <article><img class="img-fluid awards__image" src="img/png/newsweek.png" alt=""></article>
+                    <article><img class="img-fluid awards__image" src="img/png/germandesign.png" alt=""></article>
+                    <article><img class="img-fluid awards__image" src="img/png/edisonawards.png" alt=""></article>
+                    <article><img class="img-fluid awards__image" src="img/png/bestofCES.png" alt=""></article>
+                    <article><img class="img-fluid awards__image" src="img/png/robb-report.png" alt=""></article>
+                    <article><img class="img-fluid awards__image" src="img/png/electrek.png" alt=""></article>
+                    <article><img class="img-fluid awards__image" src="img/png/worldchanging.png" alt=""></article>
+                </div>    
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="container newsletter__container d-lg-flex justify-content-lg-around">
+                <div class="row"><h2 class="newsletter__header">Suscríbete a la newsletter</h2></div>
+                <form id="newsletter-form" action="" method="post" class="newsletter__form d-flex justify-content-center justify-content-lg-start flex-wrap">
+                    <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Email" class="form-control newsletter__email">
+                    <div class="newsletter__consent-container d-flex align-items-center">
+                        <input type="checkbox" name="newsletter-consent" id="newsletter-consent" class=" newsletter__consent-box">
+                        <label for="newsletter-consent" class="form-check-label newsletter__consent-text"><span>He leído y acepto la <a href="#">Política de Privacidad de Datos *</a></span></label>
+                    </div>
+                    <button type="submit" name="newsletter-submit" value="Submit" class="newsletter__submit">ENVIAR</button>
+                </form>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+    <!-- Bootstrap Vendor Library -->
+    <script src="js/vendor/bootstrap.js"></script>
+    <!-- SwiperJS Vendor Libary-->
+    <script src="js/vendor/swiper.js"></script>
+    <!-- Swipers Scripts -->
+    <script src="js/navBar.js"></script>
+    <script src="js/heroSwiper.js"></script>
+    <script src="js/productSwiper.js"></script>
+    <script src="js/variationSwiper.js"></script>
+    <script src="js/reviewSwiper.js"></script>
+</body>
+</html>
